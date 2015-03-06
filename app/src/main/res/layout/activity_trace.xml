@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Trace"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/enter_ip"
+        android:id="@+id/ip_text"
+        android:digits="0123456789."
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lookup"
+        android:id="@+id/look_btn"
+        android:layout_below="@+id/ip_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="YOUR IP ADDRESS IS:"
+    android:id="@+id/textView"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/your_ip_address"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
