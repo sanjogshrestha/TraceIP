@@ -88,7 +88,7 @@ public class LookIP extends Activity{
                     googleMap.addMarker(new MarkerOptions()
                             .position(lt)
                             .icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker))
-                            .snippet("City =" +content.getCity() + "Zip Code ="+content.getZip_code())
+                            .snippet("City =" +content.getCity() + "  "+"Zip Code ="+content.getZip_code())
                             .title(content.getCountry_name())
                     );
 
